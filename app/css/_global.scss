@@ -50,7 +50,7 @@
 
 html, body {
 font-size: .85em;
-font-family: Helvetica,Sans-Serif;
+font-family: "Segoe UI",Helvetica,Sans-Serif;
 color: #232323;
 
 margin: 0;
@@ -100,7 +100,6 @@ height: 100%;
 }
 
 .Settings-Heading {
-	font-family: Helvetica, Sans-Serif;
 	font-size: 32px;
 	font-weight: bold;
 	color: #e2e2e2;
@@ -112,9 +111,9 @@ height: 100%;
 }
 
 .regularText{
-	color: $myPink;
-	font-size: 1.2rem;
-	line-height: 1.5;
+	color: rgb(202,195,195);
+	font-size: 16px;
+	line-height: 1.4;
 }
 
 #instruction{
@@ -123,24 +122,184 @@ height: 100%;
 }
 
 #photo{
-	width:40%;
-	float: right;
+	width:34%;
+	float: left;
+	padding-top: 20px;
+	padding-left: 20px;
 }
 
 a { 
 	text-decoration: none;	
 }
 a:hover {
+	background-color: gray;
 }
 
 .steps{
 	clear: both;
+	padding-top: 20px;
+	padding-right: 10px;
 }
 
 .stepsTitleActive{
 	color: $myBlue;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	background-color: $myBlack;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
 }
 
+.stepsTitleInactive{
+	clear: both;
+	color: $inactiveGray;
+	font-size: 18px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	background-color: $myBlack;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 8px;
+}
+
+
+.descriptionActive{
+	color: $descriptionActive;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	padding: 20px 20px 10px 8px;
+}
+
+.descriptionInactive{
+	color: $inactiveGray;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	padding: 20px 20px 10px 8px;
+}
+
+#uploadCSV{
+	float: left;
+}
+
+#uploadButton{
+	float: left;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: $myBlue;
+	//text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	padding: 8px 30px 8px 30px;
+	margin-top: 10px;
+	color: white;
+	border-radius: 5px;
+}
+
+#uploadButton:hover{
+	background-color: $inactiveButton;
+}
+
+.processingBox{
+	background-color: $myPink;
+	color: $darkGray;
+	padding: 90px 20px 100px 100px;
+	font-size: 18px;
+	font-weight: 700;
+	width: 400px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	position: absolute;
+	top: 20%;
+	left: 30%;
+}
+
+#allDone{
+	color: $regularText;
+}
+
+.currentFilters{
+	border: 1px solid $myBlue;
+	width: 120px;
+	color: $regularText;
+	font-size: 18px;
+	padding: 10px 0px 10px 10px;
+	line-height: 1.4;
+}
+
+.ctaButton{
+	float: left;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: $myBlue;
+	//text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	padding: 8px 30px 8px 30px;
+	margin-top: 20px;
+	margin-right: 50px;
+	color: white;
+	border-radius: 5px;
+
+}
+
+.button
+{
+    width:200px;
+    height: 40px;    
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    vertical-align: middle;
+    font-family: "Segoe UI",Helvetica,Sans-Serif;
+    font-size: 16px;   
+    text-transform: none;
+    border:1px solid transparent;
+    color: white;
+    border-radius: 5px;
+}
+
+.button:hover{
+	background-color: $myBlue;
+	color: $darkGray;
+
+}
+
+#cancel{
+	background-color: $darkGray;
+	box-shadow: 1px 1px 1px rgba(0,0,0,1);
+	border:1px solid $regularText;
+	color: $regularText;
+}
+
+input#submit{
+	color: white;
+	background-color: $myBlue;
+	float: right;
+	margin-right: 10px;
+}
+
+#submit:hover{
+	background-color: gray;
+	color: white;
+}
+
+.ctaArea{
+	padding: 20px 20px 20px 20px;
+	clear: both;
+}
+
+.clearDiv{
+	clear: both;
+}
+
+.checkBoxArea{
+	margin-right: 10px;
+	border: 1px solid $myBlue;
+	width: auto;
+	height: 600px;
+}
+
+.item{
+	color: $regularText;
+	font-size: 16px;
+	padding-top: 15px;
+	padding-left: 15px;
+}
 
 
 

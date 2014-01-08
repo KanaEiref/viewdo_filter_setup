@@ -48,7 +48,7 @@ table {
 /* --- ViewDo Code --- */
 html, body {
   font-size: .85em;
-  font-family: Helvetica,Sans-Serif;
+  font-family: "Segoe UI",Helvetica,Sans-Serif;
   color: #232323;
   margin: 0;
   padding: 0;
@@ -92,7 +92,6 @@ html, body {
   -webkit-appearance: none; }
 
 .Settings-Heading {
-  font-family: Helvetica, Sans-Serif;
   font-size: 32px;
   font-weight: bold;
   color: #e2e2e2;
@@ -102,26 +101,164 @@ html, body {
   padding-top: 15px; }
 
 .regularText {
-  color: #f4999e;
-  font-size: 1.2rem;
-  line-height: 1.5; }
+  color: #cac3c3;
+  font-size: 16px;
+  line-height: 1.4; }
 
 #instruction {
   width: 60%;
   float: left; }
 
 #photo {
-  width: 40%;
-  float: right; }
+  width: 34%;
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px; }
 
 a {
   text-decoration: none; }
 
+a:hover {
+  background-color: gray; }
+
 .steps {
-  clear: both; }
+  clear: both;
+  padding-top: 20px;
+  padding-right: 10px; }
 
 .stepsTitleActive {
-  color: #71d0f4; }
+  color: #82ae47;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px black;
+  background-color: #0d0d0d;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px; }
+
+.stepsTitleInactive {
+  clear: both;
+  color: #7a7a7a;
+  font-size: 18px;
+  text-shadow: 1px 1px 1px black;
+  background-color: #0d0d0d;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px; }
+
+.descriptionActive {
+  color: #d6d6d6;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px black;
+  padding: 20px 20px 10px 8px; }
+
+.descriptionInactive {
+  color: #7a7a7a;
+  font-size: 16px;
+  text-shadow: 1px 1px 1px black;
+  padding: 20px 20px 10px 8px; }
+
+#uploadCSV {
+  float: left; }
+
+#uploadButton {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #82ae47;
+  padding: 8px 30px 8px 30px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 5px; }
+
+#uploadButton:hover {
+  background-color: #a4a4a4; }
+
+.processingBox {
+  background-color: #f4999e;
+  color: #393939;
+  padding: 90px 20px 100px 100px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 400px;
+  box-shadow: 2px 2px 2px black;
+  position: absolute;
+  top: 20%;
+  left: 30%; }
+
+#allDone {
+  color: #d6d6d6; }
+
+.currentFilters {
+  border: 1px solid #82ae47;
+  width: 120px;
+  color: #d6d6d6;
+  font-size: 18px;
+  padding: 10px 0px 10px 10px;
+  line-height: 1.4; }
+
+.ctaButton {
+  float: left;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #82ae47;
+  padding: 8px 30px 8px 30px;
+  margin-top: 20px;
+  margin-right: 50px;
+  color: white;
+  border-radius: 5px; }
+
+.button {
+  width: 200px;
+  height: 40px;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  vertical-align: middle;
+  font-family: "Segoe UI",Helvetica,Sans-Serif;
+  font-size: 16px;
+  text-transform: none;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 5px; }
+
+.button:hover {
+  background-color: #82ae47;
+  color: #393939; }
+
+#cancel {
+  background-color: #393939;
+  box-shadow: 1px 1px 1px black;
+  border: 1px solid #d6d6d6;
+  color: #d6d6d6; }
+
+input#submit {
+  color: white;
+  background-color: #82ae47;
+  float: right;
+  margin-right: 10px; }
+
+#submit:hover {
+  background-color: gray;
+  color: white; }
+
+.ctaArea {
+  padding: 20px 20px 20px 20px;
+  clear: both; }
+
+.clearDiv {
+  clear: both; }
+
+.checkBoxArea {
+  margin-right: 10px;
+  border: 1px solid #82ae47;
+  width: auto;
+  height: 600px; }
+
+.item {
+  color: #d6d6d6;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-left: 15px; }
 
 /* Helper Classes =============================================================================== */
 .hide {
