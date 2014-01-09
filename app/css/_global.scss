@@ -179,6 +179,7 @@ a:hover {
 
 #uploadCSV{
 	float: left;
+	margin-top: 3px;
 }
 
 #uploadButton{
@@ -188,7 +189,7 @@ a:hover {
 	background-color: $myBlue;
 	//text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	padding: 8px 30px 8px 30px;
-	margin-top: 10px;
+	margin-top: 15px;
 	color: white;
 	border-radius: 5px;
 }
@@ -343,6 +344,16 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	font-weight: 700;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 	padding: 20px 20px 10px 8px;
+}
+
+input[type=file].filtersetup{
+	float: left;
+	font-size: 16px;
+	color: $regularText;
+	margin-top: 14px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-right: 20px;
 }
 
 
