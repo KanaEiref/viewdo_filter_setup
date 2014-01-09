@@ -273,10 +273,12 @@ input#submit{
 	margin-right: 10px;
 }
 
-#submit:hover{
+#submit:hover, #cancel:hover{
 	background-color: gray;
 	color: white;
 }
+
+
 
 .ctaArea{
 	padding: 20px 20px 20px 20px;
@@ -291,7 +293,7 @@ input#submit{
 	margin-right: 10px;
 	border: 1px solid $myBlue;
 	width: auto;
-	height: 600px;
+	height: 500px;
 }
 
 .item{
@@ -299,6 +301,48 @@ input#submit{
 	font-size: 16px;
 	padding-top: 15px;
 	padding-left: 15px;
+}
+
+input[type=checkbox].css-checkbox {
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0;
+	border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+	padding-left:20px;
+	height:15px; 
+	display:inline-block;
+	line-height:15px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:15px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+	background-position: 0 -15px;
+}
+
+ .css-label{ background-image:url("../images/lite-green-check.png"); }
+
+.column{
+	float: left;
+	width: 33%;
+}
+
+.descriptionError{
+	color: $myPink;
+	font-size: 16px;
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	padding: 20px 20px 10px 8px;
 }
 
 
